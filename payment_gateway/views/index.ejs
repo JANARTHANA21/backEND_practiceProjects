@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stripe payment gateway</title>
+</head>
+<body>
+    <h1>shopping cart</h1>
+    <p>price:$ 50.00</p>
+    <p>Quantity:1</p>
+    <form action="/checkout" method="post">
+        <input type="submit" value="process to checkout">
+    </form>
+
+
+    <hr>
+    <h1>basics plan</h1>
+    <p>RS:100.00</p>
+    <a href="/subscribe?plan=basics">subscribe</a>
+
+
+    <br>
+    <h1>pro plan</h1>
+    <p>RS:1000.00</p>
+    <a href="/subscribe?plan=pro">subscribe</a>
+</body>
+</html>
