@@ -1,0 +1,40 @@
+const mongoose=require('mongoose');
+const dataSchema=new mongoose.Schema({
+    title:{
+        required:true,
+        type:String,
+    },
+    year:{
+        required:true,
+        type:String,
+    },
+    runtime:{
+        required:true,
+        type:String,
+    },
+    genre:{
+        required:true,
+        type:String,
+    },
+    director:{
+        required:true,
+        type:String,
+    },
+    actor:{
+        required:true,
+        type:String,
+    },
+    images:{
+        required:true,
+        type:Array,
+    },
+    imdbrating:{
+        required:true,
+        type:String,
+    },
+    imdbID:{
+        type:String,
+    }
+});
+
+module.exports=mongoose.model('imdb',dataSchema)
